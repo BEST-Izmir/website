@@ -1,5 +1,9 @@
 .best-izmir-nav {
-  background: #000;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   .navbar-content {
     display: flex;
     justify-content: space-between;
@@ -13,11 +17,15 @@
     align-items: center;
     list-style: none;
     .nav-link {
+      font-weight: bold;
       font-size: 1.6rem;
       color: #fff;
       text-decoration: none;
       transition: color 0.2s;
       margin: 0 25px;
+      &.selected {
+        color: var(--yellow);
+      }
       &:hover {
         color: var(--yellow);
       }
