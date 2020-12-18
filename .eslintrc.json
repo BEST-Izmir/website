@@ -18,6 +18,7 @@
         "react"
     ],
     "rules": {
+        "eslint linebreak-style": [],
         "react/react-in-jsx-scope": "off"
     },
     "globals": {
