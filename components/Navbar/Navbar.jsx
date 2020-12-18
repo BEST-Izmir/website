@@ -9,7 +9,7 @@ function navbar() {
     <nav className={styles['best-izmir-nav']}>
       <div className="container">
         <div className={styles['navbar-content']}>
-          <Logo width="100" height="50" />
+          <Logo width="150" height="100" isDark={true} />
           <ul className={styles['nav-links']}>
             <li>
               <Link href="/">
