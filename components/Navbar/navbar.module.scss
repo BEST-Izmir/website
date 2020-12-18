@@ -1,0 +1,26 @@
+.best-izmir-nav {
+  background: #000;
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    padding: 25px;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    .nav-link {
+      font-size: 1.6rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.2s;
+      margin: 0 25px;
+      &:hover {
+        color: var(--yellow);
+      }
+    }
+  }
+}
