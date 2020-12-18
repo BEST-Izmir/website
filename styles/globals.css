@@ -1,16 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+:root {
+  --yellow: #faa61a;
+  --blue: #1c75bc;
+  --green: #72bf44;
+  --black: #333;
+  --white: #eee;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+.container {
+  max-width: 117rem;
+  padding: 0 8rem;
+  margin: 0 auto;
+}
+html {
+  font-family: 'Manrope', sans-serif;
+  font-display: swap;
+  background-color: var(--white);
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
 }
