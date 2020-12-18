@@ -7,8 +7,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 MyApp.propTypes = {
-  Component: PropTypes.element.isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
+  Component: PropTypes.func.isRequired,
   pageProps: PropTypes.object.isRequired,
 };
 
