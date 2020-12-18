@@ -1,0 +1,24 @@
+.hero {
+  height: 100vh;
+  background: url('/static/cover.jpg') no-repeat center center / cover;
+  position: relative;
+  color: #fff;
+  * {
+    z-index: 1;
+  }
+  &::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+  }
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+}
