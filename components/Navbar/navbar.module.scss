@@ -1,15 +1,25 @@
+@import '../../styles/mixins.scss';
 .best-izmir-nav {
   background: transparent;
-  transition: 0.3s all ease-in;
+  transition: 0.3s transform ease-in, 0.3s background-color ease-in;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   color: white;
   top: 0;
   width: 100%;
   &.scrolled {
     background: #fff;
     position: sticky;
-    color:#333;
+    color: #333;
+  }
+
+  &.open {
+    @include md {
+      transition:0.3s transform ease-in,0s background-color;
+      background: #fff;
+      color: #333;
+      height: 250px;
+    }
   }
   &.transform {
     transform: translateY(-70px);
@@ -18,14 +28,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    @include md {
+      justify-content: space-between;
+    }
+  }
+  .mobileNav {
+    display: none;
+    @include md {
+      cursor: pointer;
+      display: block;
+    }
   }
   .nav-links {
     padding: 25px;
     display: flex;
-    height: inherit;
     justify-content: center;
     align-items: center;
     list-style: none;
+    @include md {
+      position: absolute;
+      top: 100px;
+      padding: 0;
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+    &.open {
+      @include md {
+        display: block;
+      }
+    }
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
     .nav-link {
       font-weight: bold;
       font-size: 1.6rem;
@@ -33,6 +71,7 @@
       text-decoration: none;
       transition: color 0.3s;
       margin: 0 25px;
+
       &.selected {
         color: var(--yellow);
       }

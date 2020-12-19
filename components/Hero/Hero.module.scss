@@ -1,3 +1,4 @@
+@import '../../styles/mixins.scss';
 .hero {
   height: 100vh;
   background: url('/static/cover.jpg') no-repeat center center / cover;
@@ -16,6 +17,12 @@
     background-color: rgba($color: #000000, $alpha: 0.7);
   }
   .hero-content {
+    @include md {
+      svg {
+        width: 350px;
+        height: 250px;
+      }
+    }
     display: flex;
     max-width: var(--max-width);
     margin:0 auto;
@@ -25,9 +32,18 @@
     height: inherit;
     .hero-title {
       font-size: min(3.5vw,4.5rem);
+      @include md {
+        padding:10px;
+        font-size:30px;
+        text-align: center;
+      }
     }
     .hero-subtitle {
       font-size: min(2.5vw,3rem);
+      @include md {
+        font-size:16px;
+        text-align: center;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+@import '../../styles/mixins.scss';
 .about {
   padding: 20px;
   background-color: var(--yellow);
@@ -9,7 +10,16 @@
   }
   .section-content {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    @include md {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 300px;
+      }
+    }
     gap: 15px;
     .article {
       p {

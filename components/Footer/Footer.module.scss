@@ -1,10 +1,16 @@
+@import '../../styles/mixins.scss';
 .footer {
   background: #333;
   color: var(--white);
   .footer-content {
-    display: grid;
+    display: flex;
     padding: 30px;
-    grid-template-columns: 1fr 1fr;
+
+    justify-content: space-between;
+    @include md {
+      flex-direction: column;
+      gap:15px;
+    }
     .social {
       display: flex;
       gap: 15px;
@@ -19,6 +25,9 @@
     .copyright {
       font-size: 16px;
       text-align: right;
+      @include md {
+        text-align: center;
+      }
     }
   }
 }
