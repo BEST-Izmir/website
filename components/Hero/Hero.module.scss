@@ -17,8 +17,17 @@
   }
   .hero-content {
     display: flex;
+    max-width: var(--max-width);
+    margin:0 auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: inherit;
+    .hero-title {
+      font-size: min(3.5vw,4.5rem);;
+    }
+    .hero-subtitle {
+      font-size: min(2.5vw,3rem);
+    }
   }
 }
