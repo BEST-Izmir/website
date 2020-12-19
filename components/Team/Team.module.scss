@@ -1,0 +1,17 @@
+.team {
+  background-color: var(--green);
+  padding: 20px;
+}
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
