@@ -1,5 +1,6 @@
 @import './normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
 :root {
   --yellow: #FAA519;
   --blue: #1973BE;
