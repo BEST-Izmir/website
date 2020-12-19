@@ -1,15 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.scss';
 import Logo from '../Logo';
+import useScrollY from '../../hooks/useScrollY';
+import cn from 'classnames';
 
 function navbar() {
+  const scrollY = useScrollY();
+  const [transform, setTransform] = useState(undefined);
+
+  useEffect(() => {
+    if (scrollY > 10 && transform == undefined) {
+      setTransform(true);
+      setTimeout(() => {
+        setTransform(false);
+      }, 150);
+    } else if (scrollY < 10) {
+      setTransform(undefined);
+    }
+  }, [scrollY]);
   return (
-    <nav className={styles['best-izmir-nav']}>
+    <nav className={cn(styles['best-izmir-nav'], scrollY > 10 && styles.scrolled, transform && styles.transform)}>
       <div className="container">
         <div className={styles['navbar-content']}>
-          <Logo width="150" height="100" isDark={true} />
+          <Logo width="150" height="100" isDark={scrollY > 10 ? false : true} />
           <ul className={styles['nav-links']}>
             <li>
               <Link href="/">
