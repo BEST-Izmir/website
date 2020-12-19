@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './TeamCard.module.scss';
-import Link from 'next/link';
 
 function TeamCard({ imgUrl, name, duty, mail }) {
   return (
@@ -9,7 +8,9 @@ function TeamCard({ imgUrl, name, duty, mail }) {
       <img src={imgUrl} alt={name} className={styles['team-img']} />
       <div className={styles['team-name']}>{name}</div>
       <div className={styles['team-duty']}>{duty}</div>
-      <a className={styles['team-mail']} href={`mailto:${mail}`}>{mail}</a>
+      <a className={styles['team-mail']} href={`mailto:${mail}`}>
+        {mail}
+      </a>
     </div>
   );
 }
