@@ -1,4 +1,4 @@
-import { RiFacebookCircleLine, RiInstagramLine, RiTwitterLine } from 'react-icons/ri';
+import { RiFacebookCircleLine, RiInstagramLine, RiLinkedinLine,RiGithubLine } from 'react-icons/ri';
 import styles from './Footer.module.scss';
 import Link from 'next/link';
 function Footer() {
@@ -7,19 +7,24 @@ function Footer() {
       <div className="container">
         <div className={styles['footer-content']}>
           <div className={styles.social}>
-            <Link href="http://google.com">
+            <Link href="https://www.facebook.com/BEST.IZMIR">
               <a>
                 <RiFacebookCircleLine size="32" />
               </a>
             </Link>
-            <Link href="http://google.com">
+            <Link href="https://www.instagram.com/best.izmir/">
               <a>
                 <RiInstagramLine size="32" />
               </a>
             </Link>
-            <Link href="http://google.com">
+            <Link href="https://www.linkedin.com/company/bestizmir/">
               <a>
-                <RiTwitterLine size="32" />
+                <RiLinkedinLine size="32" />
+              </a>
+            </Link>
+            <Link href="https://github.com/BEST-Izmir">
+              <a>
+                <RiGithubLine size="32" />
               </a>
             </Link>
           </div>
