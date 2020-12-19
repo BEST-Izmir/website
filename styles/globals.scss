@@ -1,10 +1,11 @@
-@import './normalize.css';
+@import './normalize';
+@import './mixins';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
-@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 :root {
-  --yellow: #FAA519;
-  --blue: #1973BE;
-  --green: #69CD28;
+  --yellow: #faa519;
+  --blue: #1973be;
+  --green: #69cd28;
   --black: #333;
   --white: #eee;
   --max-width: 117rem;
