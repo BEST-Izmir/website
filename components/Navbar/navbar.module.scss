@@ -2,9 +2,9 @@
   background: transparent;
   transition: 0.3s all ease-in;
   position: fixed;
+  z-index: 2;
   color: white;
   top: 0;
-  z-index: 1;
   width: 100%;
   &.scrolled {
     background: #fff;
