@@ -1,9 +1,9 @@
 @import './normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 :root {
-  --yellow: #faa61a;
-  --blue: #1c75bc;
-  --green: #72bf44;
+  --yellow: #FAA519;
+  --blue: #1973BE;
+  --green: #69CD28;
   --black: #333;
   --white: #eee;
   --max-width: 117rem;
