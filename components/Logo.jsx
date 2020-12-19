@@ -92,5 +92,5 @@ const LogoDark = ({ width = 100, height = 50 }) => {
 
 export default function Logo({ isDark = false, width = 100, height = 50 }) {
   if (isDark) return <LogoDark height={height} width={width} />;
-  return <LogoMain />;
+  return <LogoMain height={height} width={width} />;
 }
