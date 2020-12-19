@@ -18,7 +18,7 @@ function Layout({ title, children }) {
 
 Layout.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element),
 };
 
 export default Layout;
