@@ -24,31 +24,35 @@ function navbar() {
     <nav className={cn(styles['best-izmir-nav'], scrollY > 10 && styles.scrolled, transform && styles.transform)}>
       <div className="container">
         <div className={styles['navbar-content']}>
-          <Logo width="150" height="100" isDark={scrollY > 10 ? false : true} />
+          <Link href="#hero">
+            <a>
+              <Logo width="150" height="100" isDark={scrollY > 10 ? false : true} />
+            </a>
+          </Link>
           <ul className={styles['nav-links']}>
             <li>
-              <Link href="/">
-                <a className={styles['nav-link']}>Home</a>
+              <Link href="#hero">
+                <a className={styles['nav-link']}>Anasayfa</a>
               </Link>
             </li>
             <li>
-              <Link href="/about">
-                <a className={styles['nav-link']}>About</a>
+              <Link href="#about">
+                <a className={styles['nav-link']}>Hakkımızda</a>
               </Link>
             </li>
             <li>
-              <Link href="/events">
-                <a className={styles['nav-link']}>Events</a>
+              <Link href="#gallery">
+                <a className={styles['nav-link']}>Galeri</a>
               </Link>
             </li>
             <li>
-              <Link href="/teams">
-                <a className={styles['nav-link']}>Teams</a>
+              <Link href="#team">
+                <a className={styles['nav-link']}>Takım</a>
               </Link>
             </li>
             <li>
-              <Link href="/contact">
-                <a className={styles['nav-link']}>Contact Us</a>
+              <Link href="#contact">
+                <a className={styles['nav-link']}>İletişim</a>
               </Link>
             </li>
           </ul>
