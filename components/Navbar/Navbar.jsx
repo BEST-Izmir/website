@@ -17,7 +17,7 @@ function navbar() {
       setTransform(true);
       setTimeout(() => {
         setTransform(false);
-      }, 150);
+      }, 300);
     } else if (scrollY < 10) {
       setTransform(undefined);
     }

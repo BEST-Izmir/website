@@ -15,7 +15,10 @@
 
   &.open {
     @include md {
-      transition:0.3s transform ease-in,0s background-color;
+      animation: navbar;
+      animation-duration: 0.3s;
+      animation-iteration-count: 1;
+      transition: 0.3s transform ease-in, 0s background-color;
       background: #fff;
       color: #333;
       height: 250px;
@@ -79,5 +82,13 @@
         color: var(--yellow);
       }
     }
+  }
+}
+@keyframes navbar {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 250px;
   }
 }
