@@ -1,0 +1,224 @@
+.features-boxed {
+  color: #d5d5d5;
+  background-color: #090909;
+}
+
+.features-boxed p {
+  color: #7d8285;
+}
+
+.features-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .features-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.features-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.features-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.features-boxed .features {
+  padding: 50px 0;
+}
+
+.features-boxed .item {
+  text-align: center;
+}
+
+.features-boxed .item .box {
+  text-align: center;
+  padding: 30px;
+  background-color: #2d2d2d;
+  margin-bottom: 30px;
+}
+
+.features-boxed .item .icon {
+  font-size: 60px;
+  color: #1485ee;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.features-boxed .item .name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: inherit;
+}
+
+.features-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .display-5 {
+    margin-top: -18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .scroller {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .path {
+    width: 5px;
+    font-size: 0.5rem;
+    height: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .display-4.dsHeader {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .path {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .time-head {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .time-txt {
+    font-size: 0.5rem;
+  }
+}
+
+.head-icon {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+
+#app-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+#main-body {
+  margin-top: 130px;
+}
+
+#scroll-to-ebec {
+}
+
+#scroll-to-deadline {
+}
+
+#scroll-to-prizes {
+}
+
+#scroll-to-sponsors {
+}
+
+#PageList {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1%;
+  z-index: 10;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+}
+
+.scroll-progress-main {
+}
+
+.scroll-progress-blank {
+  width: 100%;
+  height: 0.5rem;
+  background-color: white;
+}
+
+.scroll-progress-fill {
+  height: 0.5rem;
+  width: 0%;
+  background-color: rgb(100,81,157);
+}
+
+.scroll-progress-main {
+  width: 33.333%;
+}
+
+#PageSteps {
+  border-radius: 25%;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  clear: both;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#STEP-1 {
+  z-index: 1;
+}
+
+#STEP-2 {
+  z-index: 2;
+}
+
+#STEP-3 {
+  z-index: 3;
+}
+
+.nav-icon:active {
+  margin: 1%;
+  color: rgb(228,124,255);
+  font-size: 1.5rem;
+  transition: 200ms;
+}
+
+.nav-icon:hover {
+  margin: 1%;
+  color: rgb(164,98,181);
+  font-size: 1.5rem;
+  transition: 200ms;
+}
+
+.nav-icon {
+  margin: 1%;
+  color: white;
+  font-size: 1.5rem;
+}
+
