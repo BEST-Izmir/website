@@ -120,7 +120,7 @@
 
 .head-icon {
   font-size: 3rem;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 #app-navbar {
@@ -168,7 +168,7 @@
 .scroll-progress-fill {
   height: 0.5rem;
   width: 0%;
-  background-color: rgb(100,81,157);
+  background-color: rgb(239,162,37);
 }
 
 .scroll-progress-main {
@@ -211,7 +211,7 @@
 
 .nav-icon:hover {
   margin: 1%;
-  color: rgb(164,98,181);
+  color: rgb(239,162,37);
   font-size: 1.5rem;
   transition: 200ms;
 }

@@ -91,7 +91,8 @@
 }
 
 #paragraph {
-  font-weight: 100;
+  font-size: 15px;
+  font-weight: 108;
   font-family: sans-serif;
 }
 
@@ -160,5 +161,45 @@ html {
 #mainBody {
   text-align: center;
   margin-top: 10%;
+}
+
+.person-card {
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+.person-img {
+  border-radius: 80px;
+  max-width: 160px;
+}
+
+.person-name {
+  font-weight: 100;
+  margin: 10px;
+}
+
+.person-desc {
+}
+
+.speakers-box {
+  justify-content: space-evenly;
+  padding: 1%;
+  display: flex;
+}
+
+.person-name.title {
+  margin-bottom: 0px;
+}
+
+.person-title {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .speakers-box {
+    display: inline;
+  }
 }
 

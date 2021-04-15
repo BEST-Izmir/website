@@ -80,14 +80,29 @@
 }
 
 #card-dark {
+  transition: 500ms;
   margin: 25px;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   background-color: rgb(26,26,26);
   box-shadow: 0px 5px 7px rgba(0,0,0,0.5);
   border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  #card-dark {
+    transition: 500ms;
+    margin: 025px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: rgb(26,26,26);
+    box-shadow: 0px 5px 7px rgba(0,0,0,0.5);
+    border-radius: 10px;
+  }
 }
 
 .banner {

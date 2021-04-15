@@ -39,7 +39,7 @@ window.onscroll = function() {
     
     
     
-    var colored = "rgb(164,98,181)";
+    var colored = "rgb(239,162,37)";
     if(page_y > wib_top)
         {
             var progress1 = page_y - wib_top;
