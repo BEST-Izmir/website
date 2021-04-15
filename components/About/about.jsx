@@ -5,7 +5,7 @@ function about() {
   return (
     <section className={styles.about} id="about">
       <div className="container">
-        <h3 className={styles['section-title']}>Best Nedir?</h3>
+        <h3 className={styles['section-title']}>BEST Nedir?</h3>
         <div className={styles['section-content']}>
           <div className={styles.article}>
             <p>

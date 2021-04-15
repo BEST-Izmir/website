@@ -9,13 +9,13 @@ function Team(props) {
         <div className={styles['section-content']}>
           <TeamCard
             imgUrl="/static/ekin.jpg"
-            mail="abaliogluekin@gmail.com"
+            mail="ekin.abalioglu@best.eu.org"
             duty="BEST Izmir IT Takımı Koordinatörü"
             name="Ekin Abalıoğlu"
           />
           <TeamCard
             imgUrl="/static/ataberk.jpg"
-            mail="ataberk.kartalmis@gmail.com"
+            mail="ataberk.kartalmis@best.eu.org"
             duty="BEST Izmir Yönetim Kurulu Saymanı"
             name="Ataberk Kartalmış"
           />
@@ -24,17 +24,17 @@ function Team(props) {
             duty="BEST Izmir Yönetim Kurulu Başkanı
 BEST Izmir Temsilcisi"
             name="Berk Kocakahya"
-            mail="byzrz91@gmail.com"
+            mail="berk.kocakahya@best-eu.org"
           />
           <TeamCard
             imgUrl="/static/emrecan.jpg"
             duty="BEST Izmir Dizayn Takımı Koordinatörü"
-            mail="emrecancimen@gmail.com"
+            mail="emrecan.cimen@best.eu.org"
             name="Emrecan Çimen"
           />
           <TeamCard
             imgUrl="/static/irem.jpg"
-            mail="iremalpcetin@gmail.com"
+            mail="irem.alpcetin@best-eu.org"
             duty="BEST Izmir Yönetim Kurulu Sekreteri"
             name="İrem Alpçetin"
           />
